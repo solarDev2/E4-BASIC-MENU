@@ -1,0 +1,483 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local ConnectButton = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local ProfileFrame = Instance.new("Frame")
+local ProfileImage = Instance.new("ImageLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local Name = Instance.new("TextLabel")
+local TimeFrame = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local Time = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local ScriptFrame = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local ScriptHub = Instance.new("ImageButton")
+local TextLabel_5 = Instance.new("TextLabel")
+local LogsFrame = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextLabel_6 = Instance.new("TextLabel")
+local CloseScriptHub = Instance.new("TextButton")
+local ScriptHub_2 = Instance.new("Frame")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+MainFrame.BorderColor3 = Color3.fromRGB(54, 54, 54)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.227277443, 0, 0.0945945978, 0)
+MainFrame.Size = UDim2.new(0, 861, 0, 500)
+
+UICorner.Parent = MainFrame
+
+Frame.Parent = MainFrame
+Frame.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0987224132, 0, 0, 0)
+Frame.Size = UDim2.new(0, 776, 0, 49)
+
+UICorner_2.Parent = Frame
+
+TextLabel.Parent = MainFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.347796887, 0, -0.000277893065, 0)
+TextLabel.Size = UDim2.new(0, 576, 0, 50)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "E4 BASIC MENU"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UICorner_3.Parent = TextLabel
+
+TextButton.Parent = MainFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+TextButton.BorderColor3 = Color3.fromRGB(40, 40, 40)
+TextButton.Position = UDim2.new(0.108013935, 0, 0.0120000001, 0)
+TextButton.Size = UDim2.new(0, 129, 0, 37)
+TextButton.Font = Enum.Font.SourceSansBold
+TextButton.Text = "Home"
+TextButton.TextColor3 = Color3.fromRGB(244, 244, 244)
+TextButton.TextSize = 25.000
+TextButton.TextWrapped = true
+
+ConnectButton.Name = "ConnectButton"
+ConnectButton.Parent = MainFrame
+ConnectButton.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+ConnectButton.BorderColor3 = Color3.fromRGB(40, 40, 40)
+ConnectButton.Position = UDim2.new(0.264808357, 0, 0.0120000001, 0)
+ConnectButton.Size = UDim2.new(0, 129, 0, 37)
+ConnectButton.Font = Enum.Font.SourceSansBold
+ConnectButton.Text = "🟢 Connected"
+ConnectButton.TextColor3 = Color3.fromRGB(244, 244, 244)
+ConnectButton.TextSize = 25.000
+ConnectButton.TextWrapped = true
+
+TextLabel_2.Parent = MainFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.160278752, 0, 0.145999998, 0)
+TextLabel_2.Size = UDim2.new(0, 232, 0, 24)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "🔆 Good Morning"
+TextLabel_2.TextColor3 = Color3.fromRGB(244, 244, 244)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+ProfileFrame.Name = "ProfileFrame"
+ProfileFrame.Parent = MainFrame
+ProfileFrame.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+ProfileFrame.BorderColor3 = Color3.fromRGB(67, 67, 67)
+ProfileFrame.Position = UDim2.new(0.118875787, 0, 0.223272741, 0)
+ProfileFrame.Size = UDim2.new(0, 334, 0, 123)
+
+ProfileImage.Name = "ProfileImage"
+ProfileImage.Parent = ProfileFrame
+ProfileImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ProfileImage.BackgroundTransparency = 1.000
+ProfileImage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ProfileImage.BorderSizePixel = 0
+ProfileImage.Position = UDim2.new(0.0149700595, 0, 0.089430891, 0)
+ProfileImage.Size = UDim2.new(0, 100, 0, 100)
+ProfileImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+TextLabel_3.Parent = ProfileFrame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.401197612, 0, 0.178861782, 0)
+TextLabel_3.Size = UDim2.new(0, 175, 0, 24)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Welcome"
+TextLabel_3.TextColor3 = Color3.fromRGB(238, 238, 238)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+Name.Name = "Name"
+Name.Parent = ProfileFrame
+Name.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Name.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Name.BorderSizePixel = 0
+Name.Position = UDim2.new(0.374251485, 0, 0.373983741, 0)
+Name.Size = UDim2.new(0, 193, 0, 35)
+Name.Font = Enum.Font.SourceSans
+Name.Text = "Name"
+Name.TextColor3 = Color3.fromRGB(212, 64, 238)
+Name.TextScaled = true
+Name.TextSize = 14.000
+Name.TextWrapped = true
+
+TimeFrame.Name = "TimeFrame"
+TimeFrame.Parent = MainFrame
+TimeFrame.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+TimeFrame.BorderColor3 = Color3.fromRGB(67, 67, 67)
+TimeFrame.Position = UDim2.new(0.581188977, 0, 0.233415231, 0)
+TimeFrame.Size = UDim2.new(0, 334, 0, 123)
+
+TextLabel_4.Parent = TimeFrame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.227544904, 0, 0.113821141, 0)
+TextLabel_4.Size = UDim2.new(0, 195, 0, 32)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Remaining Time"
+TextLabel_4.TextColor3 = Color3.fromRGB(66, 23, 238)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+Time.Name = "Time"
+Time.Parent = TimeFrame
+Time.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Time.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Time.BorderSizePixel = 0
+Time.Position = UDim2.new(0.254491031, 0, 0.495934963, 0)
+Time.Size = UDim2.new(0, 207, 0, 35)
+Time.Font = Enum.Font.SourceSans
+Time.Text = "Timer"
+Time.TextColor3 = Color3.fromRGB(66, 23, 238)
+Time.TextScaled = true
+Time.TextSize = 14.000
+Time.TextWrapped = true
+
+ImageLabel.Parent = TimeFrame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.0958083868, 0, 0.146341458, 0)
+ImageLabel.Size = UDim2.new(0, 36, 0, 32)
+ImageLabel.Image = "rbxassetid://78968863116427"
+
+ImageLabel_2.Parent = TimeFrame
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(0.0958083868, 0, 0.504065037, 0)
+ImageLabel_2.Size = UDim2.new(0, 36, 0, 32)
+ImageLabel_2.Image = "rbxassetid://113939595829160"
+
+ScriptFrame.Name = "ScriptFrame"
+ScriptFrame.Parent = MainFrame
+ScriptFrame.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+ScriptFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScriptFrame.BorderSizePixel = 0
+ScriptFrame.Position = UDim2.new(-2.70794771e-05, 0, -0.00200488279, 0)
+ScriptFrame.Size = UDim2.new(0, 84, 0, 500)
+
+UICorner_4.Parent = ScriptFrame
+
+ImageLabel_3.Parent = ScriptFrame
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_3.BorderSizePixel = 0
+ImageLabel_3.Position = UDim2.new(0.099444069, 0, -0.000178833012, 0)
+ImageLabel_3.Size = UDim2.new(0, 66, 0, 65)
+ImageLabel_3.Image = "rbxassetid://104842797544229"
+
+ScriptHub.Name = "ScriptHub"
+ScriptHub.Parent = MainFrame
+ScriptHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptHub.BackgroundTransparency = 1.000
+ScriptHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScriptHub.BorderSizePixel = 0
+ScriptHub.Position = UDim2.new(0.00940767303, 0, 0.236000001, 0)
+ScriptHub.Size = UDim2.new(0, 66, 0, 65)
+ScriptHub.Image = "rbxassetid://86351889026937"
+
+TextLabel_5.Parent = MainFrame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.00464576064, 0, 0.194000006, 0)
+TextLabel_5.Size = UDim2.new(0, 75, 0, 25)
+TextLabel_5.Font = Enum.Font.SourceSansBold
+TextLabel_5.Text = "ScriptHub"
+TextLabel_5.TextColor3 = Color3.fromRGB(244, 244, 244)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 20.000
+TextLabel_5.TextWrapped = true
+
+LogsFrame.Name = "LogsFrame"
+LogsFrame.Parent = MainFrame
+LogsFrame.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+LogsFrame.BorderColor3 = Color3.fromRGB(67, 67, 67)
+LogsFrame.Position = UDim2.new(0.108013935, 0, 0.499272704, 0)
+LogsFrame.Size = UDim2.new(0, 762, 0, 242)
+
+ScrollingFrame.Parent = LogsFrame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.0183727033, 0, 0.0413223132, 0)
+ScrollingFrame.Size = UDim2.new(0, 733, 0, 222)
+ScrollingFrame.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
+
+TextLabel_6.Parent = LogsFrame
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.0398320891, 0, 0.111570247, 0)
+TextLabel_6.Size = UDim2.new(0, 716, 0, 205)
+TextLabel_6.Font = Enum.Font.SourceSansBold
+TextLabel_6.Text = "MORE UPDATES COMING SOON!!!"
+TextLabel_6.TextColor3 = Color3.fromRGB(124, 22, 149)
+TextLabel_6.TextSize = 45.000
+TextLabel_6.TextWrapped = true
+TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_6.TextYAlignment = Enum.TextYAlignment.Top
+
+CloseScriptHub.Name = "Close ScriptHub"
+CloseScriptHub.Parent = MainFrame
+CloseScriptHub.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+CloseScriptHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloseScriptHub.BorderSizePixel = 0
+CloseScriptHub.Position = UDim2.new(0.939605117, 0, 0.0120000001, 0)
+CloseScriptHub.Size = UDim2.new(0, 40, 0, 37)
+CloseScriptHub.Font = Enum.Font.SourceSansBold
+CloseScriptHub.Text = "X"
+CloseScriptHub.TextColor3 = Color3.fromRGB(229, 229, 229)
+CloseScriptHub.TextScaled = true
+CloseScriptHub.TextSize = 14.000
+CloseScriptHub.TextWrapped = true
+
+ScriptHub_2.Name = "ScriptHub"
+ScriptHub_2.Parent = ScreenGui
+ScriptHub_2.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+ScriptHub_2.BorderColor3 = Color3.fromRGB(75, 75, 75)
+ScriptHub_2.Position = UDim2.new(0.2969926, 0, 0.173105821, 0)
+ScriptHub_2.Size = UDim2.new(0, 759, 0, 424)
+ScriptHub_2.Visible = false
+
+TextButton_2.Parent = ScriptHub_2
+TextButton_2.BackgroundColor3 = Color3.fromRGB(120, 75, 255)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.0441911854, 0, 0.0502875447, 0)
+TextButton_2.Size = UDim2.new(0, 134, 0, 58)
+TextButton_2.Font = Enum.Font.SourceSansBold
+TextButton_2.Text = "Admin"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+UICorner_5.Parent = TextButton_2
+
+-- Scripts:
+
+local function MOOECHA_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local player = game.Players.LocalPlayer -- Get the local player
+	
+	-- Locate the MainFrame first, then the ProfileFrame inside it
+	local mainFrame = script.Parent:WaitForChild("MainFrame")
+	local profileFrame = mainFrame:WaitForChild("ProfileFrame")
+	
+	-- Get the Name TextLabel and ProfileImage ImageLabel inside ProfileFrame
+	local nameLabel = profileFrame:WaitForChild("Name") -- The TextLabel for the player's name
+	local profileImage = profileFrame:WaitForChild("ProfileImage") -- The ImageLabel for the player's avatar
+	
+	-- Set the player's Roblox username in the Name TextLabel
+	nameLabel.Text = player.Name
+	
+	-- Set the player's avatar image in the ProfileImage
+	local avatarUrl = "https://www.roblox.com/headshot-thumbnail/image?userId=" .. player.UserId .. "&width=420&height=420&format=png"
+	profileImage.Image = avatarUrl
+	
+end
+coroutine.wrap(MOOECHA_fake_script)()
+local function FFPFQDY_fake_script() -- TimeFrame.LocalScript 
+	local script = Instance.new('LocalScript', TimeFrame)
+
+	-- Set the duration for 3000 years in seconds
+	local totalSeconds = 3000 * 365 * 24 * 60 * 60 -- 3000 years
+	
+	-- Access the TextLabel named "Time" inside "TimeFrame"
+	local timeLabel = script.Parent:WaitForChild("Time")
+	
+	-- Function to update the countdown
+	local function updateCountdown()
+		while totalSeconds > 0 do
+			-- Calculate years, months, and seconds
+			local years = math.floor(totalSeconds / (365 * 24 * 60 * 60))
+			local months = math.floor((totalSeconds % (365 * 24 * 60 * 60)) / (30 * 24 * 60 * 60))  -- Using 30 days as a month
+			local seconds = totalSeconds % 60  -- Calculate remaining seconds
+	
+			-- Update the TextLabel with the current countdown
+			timeLabel.Text = string.format("%d years %d months %d seconds", years, months, seconds)
+	
+			-- Wait for 1 second before updating again
+			wait(1)
+	
+			-- Decrease the total time by 1 second
+			totalSeconds = totalSeconds - 1
+		end
+	
+		-- When the timer ends, show a message
+		timeLabel.Text = "Countdown finished!"
+	end
+	
+	-- Start the countdown
+	updateCountdown()
+	
+end
+coroutine.wrap(FFPFQDY_fake_script)()
+local function SBJKGS_fake_script() -- ScriptHub.LocalScript 
+	local script = Instance.new('LocalScript', ScriptHub)
+
+	-- Reference the main UI elements
+	local mainFrame = script.Parent.Parent -- Assuming ScriptHub button is inside MainFrame
+	local scriptHubFrame = mainFrame.Parent:WaitForChild("ScriptHub") -- Assuming ScriptHub frame is at the same level as MainFrame
+	local scriptHubButton = mainFrame:WaitForChild("ScriptHub") -- The ImageButton
+	
+	-- Toggle functionality
+	scriptHubButton.MouseButton1Click:Connect(function()
+		-- Toggle visibility of the ScriptHub frame
+		scriptHubFrame.Visible = not scriptHubFrame.Visible
+	end)
+	
+end
+coroutine.wrap(SBJKGS_fake_script)()
+local function MPPWZSE_fake_script() -- CloseScriptHub.LocalScript 
+	local script = Instance.new('LocalScript', CloseScriptHub)
+
+	-- Reference to the TextButton for closing MainFrame
+	local player = game.Players.LocalPlayer
+	local screenGui = player.PlayerGui:WaitForChild("ScreenGui")  -- Reference to ScreenGui
+	local mainFrame = screenGui:WaitForChild("MainFrame")  -- Reference to MainFrame inside ScreenGui
+	
+	-- Attempt to get the Close ScriptHub button inside MainFrame
+	local closeScriptHubButton = mainFrame:WaitForChild("Close ScriptHub", 5)  -- Wait 5 seconds for the button
+	
+	-- Debugging to check if the button and frame are found
+	if closeScriptHubButton then
+		print("Close ScriptHub button found!")
+	else
+		print("Close ScriptHub button NOT found!")
+	end
+	
+	if mainFrame then
+		print("MainFrame found!")
+	else
+		print("MainFrame NOT found!")
+	end
+	
+	-- Close MainFrame when Close ScriptHub button is clicked
+	if closeScriptHubButton and mainFrame then
+		closeScriptHubButton.MouseButton1Click:Connect(function()
+			print("Closing MainFrame...")
+			mainFrame.Visible = false  -- Hide the MainFrame
+		end)
+	else
+		print("Button or Frame is missing!")
+	end
+	
+end
+coroutine.wrap(MPPWZSE_fake_script)()
+local function DKWGBKM_fake_script() -- MainFrame.LocalScript 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	-- Create the ScreenGui
+	local screenGui = Instance.new("ScreenGui")
+	screenGui.Name = "CustomPopup"
+	screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui") -- Parent to PlayerGui
+	
+	-- Create the Frame (popup container) with a rectangle shape
+	local frame = Instance.new("Frame")
+	frame.Name = "Frame"
+	frame.Size = UDim2.new(0, 300, 0, 60)  -- Size of the popup, now more rectangular
+	frame.Position = UDim2.new(0.8, 0, 0.9, 0)  -- Position at the bottom-right corner
+	frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)  -- Light background color
+	frame.BackgroundTransparency = 0.6  -- Slight transparency for a light look
+	frame.BorderSizePixel = 2  -- Optional: Add a border
+	frame.BorderColor3 = Color3.fromRGB(0, 0, 0)  -- Border color
+	frame.Parent = screenGui  -- Parent the frame to the ScreenGui
+	
+	-- Create the TextLabel to display the message
+	local textLabel = Instance.new("TextLabel")
+	textLabel.Name = "TextLabel"
+	textLabel.Size = UDim2.new(1, -10, 1, -10)  -- Add padding inside the frame
+	textLabel.Position = UDim2.new(0, 5, 0, 5)  -- Padding of 5 pixels from the edges
+	textLabel.Text = "E4 BASIC MENU ACTIVE"  -- Message to display
+	textLabel.TextColor3 = Color3.fromRGB(0, 0, 0)  -- Dark text for contrast
+	textLabel.TextSize = 18  -- Text size
+	textLabel.TextXAlignment = Enum.TextXAlignment.Center  -- Center the text horizontally
+	textLabel.TextYAlignment = Enum.TextYAlignment.Center  -- Center the text vertically
+	textLabel.BackgroundTransparency = 1  -- No background for the text itself
+	textLabel.TextWrapped = true  -- Wrap text if it doesn't fit in one line
+	textLabel.Parent = frame  -- Parent the text label to the frame
+	
+	-- Function to show the popup and then hide it after 5 seconds
+	local function showPopup()
+		frame.Visible = true  -- Show the frame
+		wait(5)  -- Wait for 5 seconds
+		frame:Destroy()  -- Remove the frame after 5 seconds
+	end
+	
+	-- Show the popup
+	showPopup()
+	
+end
+coroutine.wrap(DKWGBKM_fake_script)()
+local function ZQPAWJ_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	-- Infinite Yield script loader
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	
+end
+coroutine.wrap(ZQPAWJ_fake_script)()

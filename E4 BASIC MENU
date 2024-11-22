@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local ScreenGui = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -10,7 +5,7 @@ local Frame = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
 local UICorner_3 = Instance.new("UICorner")
-local TextButton = Instance.new("TextButton")
+local Home = Instance.new("TextButton")
 local ConnectButton = Instance.new("TextButton")
 local TextLabel_2 = Instance.new("TextLabel")
 local ProfileFrame = Instance.new("Frame")
@@ -90,16 +85,17 @@ TextLabel.TextWrapped = true
 
 UICorner_3.Parent = TextLabel
 
-TextButton.Parent = MainFrame
-TextButton.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
-TextButton.BorderColor3 = Color3.fromRGB(40, 40, 40)
-TextButton.Position = UDim2.new(0, 92, 0, 6)
-TextButton.Size = UDim2.new(0, 129, 0, 37)
-TextButton.Font = Enum.Font.SourceSansBold
-TextButton.Text = "Home"
-TextButton.TextColor3 = Color3.fromRGB(244, 244, 244)
-TextButton.TextSize = 25.000
-TextButton.TextWrapped = true
+Home.Name = "Home"
+Home.Parent = MainFrame
+Home.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Home.BorderColor3 = Color3.fromRGB(40, 40, 40)
+Home.Position = UDim2.new(0, 92, 0, 6)
+Home.Size = UDim2.new(0, 129, 0, 37)
+Home.Font = Enum.Font.SourceSansBold
+Home.Text = "Home"
+Home.TextColor3 = Color3.fromRGB(244, 244, 244)
+Home.TextSize = 25.000
+Home.TextWrapped = true
 
 ConnectButton.Name = "ConnectButton"
 ConnectButton.Parent = MainFrame
@@ -479,7 +475,23 @@ TextLabel_12.TextWrapped = true
 
 -- Scripts:
 
-local function SJUR_fake_script() -- ProfileImage.LocalScript 
+local function OOTAVJ_fake_script() -- Home.LocalScript 
+	local script = Instance.new('LocalScript', Home)
+
+	-- Reference the main UI elements
+	local mainFrame = script.Parent.Parent -- Assuming ScriptHub button is inside MainFrame
+	local mainHubFrame = mainFrame.Parent:WaitForChild("MainFrame") -- Assuming ScriptHub frame is at the same level as MainFrame
+	local homeHubButton = mainFrame:WaitForChild("Home") -- The ImageButton
+	
+	-- Toggle functionality
+	homeHubButton.MouseButton1Click:Connect(function()
+		-- Toggle visibility of the ScriptHub frame
+		mainHubFrame.Visible = not mainHubFrame.Visible
+	end)
+	
+end
+coroutine.wrap(OOTAVJ_fake_script)()
+local function TIGYD_fake_script() -- ProfileImage.LocalScript 
 	local script = Instance.new('LocalScript', ProfileImage)
 
 	local Players = game:GetService("Players")
@@ -509,8 +521,8 @@ local function SJUR_fake_script() -- ProfileImage.LocalScript
 	profileFrame.TextLabel.Text = "Username: " .. username
 	profileFrame.TextLabel2.Text = "DisplayName: " .. displayName
 end
-coroutine.wrap(SJUR_fake_script)()
-local function PYYKYY_fake_script() -- TimeFrame.LocalScript 
+coroutine.wrap(TIGYD_fake_script)()
+local function JITIMPK_fake_script() -- TimeFrame.LocalScript 
 	local script = Instance.new('LocalScript', TimeFrame)
 
 	-- Set the duration for 3000 years in seconds
@@ -545,8 +557,8 @@ local function PYYKYY_fake_script() -- TimeFrame.LocalScript
 	updateCountdown()
 	
 end
-coroutine.wrap(PYYKYY_fake_script)()
-local function QWEI_fake_script() -- ScriptHub.LocalScript 
+coroutine.wrap(JITIMPK_fake_script)()
+local function VYWQCDL_fake_script() -- ScriptHub.LocalScript 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	-- Reference the main UI elements
@@ -561,8 +573,8 @@ local function QWEI_fake_script() -- ScriptHub.LocalScript
 	end)
 	
 end
-coroutine.wrap(QWEI_fake_script)()
-local function RZLATV_fake_script() -- CloseScriptHub.LocalScript 
+coroutine.wrap(VYWQCDL_fake_script)()
+local function FKHF_fake_script() -- CloseScriptHub.LocalScript 
 	local script = Instance.new('LocalScript', CloseScriptHub)
 
 	-- Reference to the TextButton for closing MainFrame
@@ -597,8 +609,8 @@ local function RZLATV_fake_script() -- CloseScriptHub.LocalScript
 	end
 	
 end
-coroutine.wrap(RZLATV_fake_script)()
-local function VDIHBZD_fake_script() -- MainFrame.LocalScript 
+coroutine.wrap(FKHF_fake_script)()
+local function SFTSHBR_fake_script() -- MainFrame.LocalScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	-- Create the ScreenGui
@@ -642,8 +654,8 @@ local function VDIHBZD_fake_script() -- MainFrame.LocalScript
 	showPopup()
 	
 end
-coroutine.wrap(VDIHBZD_fake_script)()
-local function XNSCBB_fake_script() -- SettingsHub.LocalScript 
+coroutine.wrap(SFTSHBR_fake_script)()
+local function RLECGY_fake_script() -- SettingsHub.LocalScript 
 	local script = Instance.new('LocalScript', SettingsHub)
 
 	-- Reference the main UI elements
@@ -658,8 +670,8 @@ local function XNSCBB_fake_script() -- SettingsHub.LocalScript
 	end)
 	
 end
-coroutine.wrap(XNSCBB_fake_script)()
-local function GBVA_fake_script() -- NewsHub.LocalScript 
+coroutine.wrap(RLECGY_fake_script)()
+local function PLYER_fake_script() -- NewsHub.LocalScript 
 	local script = Instance.new('LocalScript', NewsHub)
 
 	-- Reference the main UI elements
@@ -674,8 +686,8 @@ local function GBVA_fake_script() -- NewsHub.LocalScript
 	end)
 	
 end
-coroutine.wrap(GBVA_fake_script)()
-local function OYLQCS_fake_script() -- MainFrame.LocalScript 
+coroutine.wrap(PLYER_fake_script)()
+local function ENHVH_fake_script() -- MainFrame.LocalScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local player = game.Players.LocalPlayer -- Get the local player
@@ -697,8 +709,8 @@ local function OYLQCS_fake_script() -- MainFrame.LocalScript
 	end
 	
 end
-coroutine.wrap(OYLQCS_fake_script)()
-local function BPDVFL_fake_script() -- ChatBypass.ChatBypassLoader 
+coroutine.wrap(ENHVH_fake_script)()
+local function HMWN_fake_script() -- ChatBypass.ChatBypassLoader 
 	local script = Instance.new('LocalScript', ChatBypass)
 
 	local button = script.Parent
@@ -706,7 +718,5 @@ local function BPDVFL_fake_script() -- ChatBypass.ChatBypassLoader
 	    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end
 	button.Activated:Connect(loadInfiniteYield)
-	
-	
 end
-coroutine.wrap(BPDVFL_fake_script)()
+coroutine.wrap(HMWN_fake_script)()
